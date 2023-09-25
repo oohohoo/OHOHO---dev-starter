@@ -1,0 +1,57 @@
+/* *******************************
+Header
+******************************* */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header-cta-wrap {
+    grid-area: 1 / 10 / 2 / 13;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main-navigation {
+    grid-area: 1 / 4 / 2 / 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    padding-left: 0;
+    display: flex;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+/* *******************************
+Push footer if no content
+******************************* */
+
+.barba-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}

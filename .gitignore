@@ -24,5 +24,10 @@ typings/
 # dotenv environment variables file
 .env
 
+# Pinegrow
+.DS_Store
+_pgbackup/
+.history/
+
 # Production files
 dist

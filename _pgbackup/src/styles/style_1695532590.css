@@ -1,0 +1,7 @@
+.header-cta-wrap {
+    grid-area: 1 / 10 / 2 / 13;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}

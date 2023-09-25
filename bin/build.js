@@ -17,6 +17,7 @@ const SERVE_ORIGIN = `http://localhost:${SERVE_PORT}`;
 // Create context
 const context = await esbuild.context({
   bundle: true,
+  loader: { '.svg': 'file' },
   entryPoints: ENTRY_POINTS,
   outdir: BUILD_DIRECTORY,
   minify: PRODUCTION,
