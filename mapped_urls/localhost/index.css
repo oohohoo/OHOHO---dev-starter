@@ -2996,7 +2996,7 @@ html.lenis {
 .is-loading header,
 .is-loading .barba-container,
 .is-loading .fill-background {
-    /* display: none */
+    display: none;
 }
 
 .is-loading {

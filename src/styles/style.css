@@ -1,7 +1,7 @@
 /* *******************************
 Header
 ******************************* */
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,6 +27,8 @@ header {
 .menu {
     padding-left: 0;
     display: flex;
+
+    /* flex-direction: column */
 }
 
 .menu-item {
@@ -44,7 +46,6 @@ Push footer if no content
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
 }
 
 main {
@@ -64,4 +65,322 @@ footer {
     height: 100vh;
     background-color: red;
 } */
+/* *******************************
+Fullscreen Navigation
+******************************* */
+/* MENU */
+.fullscreen-menu-component {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 3000;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
 
+.fs-menu_wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100svh;
+    height: 100vh;
+    padding-left: 10rem;
+    grid-area: 1 / 1 / 2 / 6;
+    z-index: 9000;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fs-menu_sub_nav {
+    position: relative;
+    z-index: 100;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fs-menu_language_nav {
+    display: flex;
+}
+
+.fs-main_item-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    margin-right: .3rem;
+}
+
+.fs-main-nav_wrapper {
+    list-style: none;
+    display: flex;
+}
+
+.fs-menu_main-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -.6rem;
+}
+
+.fs-main-item {
+    display: inline-block;
+    margin-top: 0px;
+    color: #222;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.underline {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    height: 2px;
+    background-color: #000;
+}
+
+.superscript {
+    position: relative;
+    top: -20px;
+    height: 30px;
+    margin-top: 10px;
+    color: #000;
+    font-size: 9px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.fs-sub-nav_wrapper {
+    display: inline-block;
+    margin-bottom: 3px;
+    list-style: none;
+}
+
+.fs-sub-item {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: -21px;
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    color: #080808;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.open-menu_wrapper {
+    display: flex;
+    width: 40px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hambyline1 {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #fb9fa4;
+}
+
+.hambyline2 {
+    width: 80%;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #fb9fa3;
+}
+
+.hambyline3 {
+    width: 55%;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #fb9fa4;
+}
+
+.hambyline4 {
+    width: 40px;
+    height: 2px;
+    background-color: #fb9fa4;
+}
+
+#openmenu {
+    visibility: hidden;
+    position: absolute;
+    left: 4em;
+    top: 8%;
+    right: auto;
+    bottom: auto;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#closemenu {
+    visibility: hidden;
+    position: absolute;
+    left: 4em;
+    top: 8%;
+    right: auto;
+    bottom: auto;
+    z-index: 999999999;
+    cursor: pointer;
+}
+
+.lang-wrap {
+    letter-spacing: .5rem;
+    cursor: pointer;
+}
+
+/* MARQUEE */
+.fs-menu_marquee ul.marqueelist.cloned {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.fs-menu_marquee {
+    visibility: hidden;
+    position: relative;
+    z-index: 100;
+    display: block;
+    grid-area: 4 / 1 / 5 / 13;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.marqueelist {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.marqueelist-item {
+    padding-right: 0px;
+    padding-left: 0px;
+    clear: left;
+    font-size: 85px;
+}
+
+/* BACKROUNDS AND TEXTS */
+.text-block {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    font-size: 118px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+}
+
+.background {
+    background-color: #485595;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 3;
+    height: 100vh;
+    grid-area: 1 / 1 / 5 / 13;
+    justify-self: end;
+}
+
+.background-inner {
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    right: 10rem;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.bgimage {
+    visibility: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 62% 50%;
+}
+
+.collage {
+    position: relative;
+    z-index: 10000000000;
+    margin-top: 90px;
+    cursor: pointer;
+    grid-area: 1 / 12 / 2 / 13;
+    justify-self: center;
+    align-self: stretch;
+}
+
+.collage-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60px;
+    flex-direction: column;
+}
+
+.text-block-3 {
+    transform: rotate(-90deg);
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.div-block-5 {
+    width: 200px;
+    height: 1px;
+    margin-top: -219px;
+    margin-left: -69px;
+    background-color: #000;
+    transform: rotate(-90deg);
+}
+
+.kosara {
+    position: relative;
+    z-index: 5000;
+    grid-area: 4 / 12 / 5 / 13;
+    justify-self: center;
+    align-self: center;
+}
+
+.wback {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 2;
+    background-color: var(--light);
+}
+
+.heading-2 {
+    position: absolute;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2vw;
+    align-items: center;
+    color: #fbadae;
+    font-size: 100px;
+    line-height: 0.8;
+    font-weight: 400;
+    z-index: 6000;
+}

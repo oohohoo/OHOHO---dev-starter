@@ -1,4 +1,4 @@
-/* OHOHO CSS Framework v 1.1 */
+/* OHOHO CSS Framework v 1.2 */
 /* *******************************
 Global Styles & Resets
 ******************************* */
@@ -31,8 +31,7 @@ html {
     text-rendering: optimizeLegibility;
     margin: 0;
     padding: 0;
-
-    /* overflow: hidden */
+    overflow: hidden;
 }
 
 /* Enable scroll on devices */
@@ -123,7 +122,7 @@ Structure Classes
 
 .container-large {
     width: 100%;
-    max-width: 80rem;
+    max-width: 80;
     margin-right: auto;
     margin-left: auto;
 }
@@ -152,48 +151,48 @@ Structure Classes
 HTML Heading Tags
 ******************************* */
 h1 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 4rem;
     line-height: 1.1;
     font-weight: 700;
 }
 
 h2 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 700;
 }
 
 h3 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 700;
 }
 
 h4 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 700;
 }
 
 h5 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.25rem;
     line-height: 1.5;
     font-weight: 700;
 }
 
 h6 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 700;
@@ -217,7 +216,7 @@ a:not([class]) {
 }
 
 p {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 p:empty {
@@ -266,16 +265,16 @@ ol[role='list'] {
 }
 
 ul {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 1.5rem;
     list-style-type: disc;
     list-style-position: inside;
 }
 
 ol {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 1.5rem;
 }
 
@@ -442,8 +441,8 @@ Text Styles
 }
 
 .text-style-quote {
-    margin-bottom: 0rem;
-    padding: 0rem 1.25rem;
+    margin-bottom: 0;
+    padding: 0 1.25rem;
     border-left: 0.25rem solid #e2e2e2;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -499,8 +498,8 @@ Text Align
 Blockquote styles
 ******************************* */
 blockquote {
-    margin-bottom: 0rem;
-    padding: 0rem 1.25rem;
+    margin-bottom: 0;
+    padding: 0 1.25rem;
     border-left: 0.25rem solid #e2e2e2;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -615,7 +614,7 @@ Max Width Styles
 
 .max-width-small {
     width: 100%;
-    max-width: 20rem;
+    max-width: 20;
 }
 
 .max-width-medium {
@@ -635,7 +634,7 @@ Max Width Styles
 
 .max-width-xxlarge {
     width: 100%;
-    max-width: 80rem;
+    max-width: 80;
 }
 
 .max-width-full {
@@ -659,7 +658,7 @@ Margin and Padding Styles
 }
 
 .margin-xsmall {
-    margin: 0.5rem;
+    margin: .5rem;
 }
 
 .padding-xhuge {
@@ -671,7 +670,7 @@ Margin and Padding Styles
 }
 
 .padding-0 {
-    padding: 0rem;
+    padding: 0;
 }
 
 .padding-xxhuge {
@@ -691,7 +690,7 @@ Margin and Padding Styles
 }
 
 .margin-xxsmall {
-    margin: 0.25rem;
+    margin: .25rem;
 }
 
 .padding-custom3 {
@@ -703,7 +702,7 @@ Margin and Padding Styles
 }
 
 .margin-tiny {
-    margin: 0.125rem;
+    margin: .125rem;
 }
 
 .padding-small {
@@ -731,7 +730,7 @@ Margin and Padding Styles
 }
 
 .padding-xsmall {
-    padding: 0.5rem;
+    padding: .5rem;
 }
 
 .margin-xxlarge {
@@ -739,7 +738,7 @@ Margin and Padding Styles
 }
 
 .padding-xxsmall {
-    padding: 0.25rem;
+    padding: .25rem;
 }
 
 .margin-xhuge {
@@ -747,7 +746,7 @@ Margin and Padding Styles
 }
 
 .padding-tiny {
-    padding: 0.125rem;
+    padding: .125rem;
 }
 
 .margin-small {
@@ -763,75 +762,136 @@ Margin and Padding Styles
 }
 
 .margin-0 {
-    margin: 0rem;
+    margin: 0;
 }
 
 .margin-horizontal {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .padding-top {
-    padding-right: 0rem;
-    padding-bottom: 0rem;
-    padding-left: 0rem;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .margin-vertical {
-    margin-right: 0rem;
-    margin-left: 0rem;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .margin-bottom {
-    margin-top: 0rem;
-    margin-right: 0rem;
-    margin-left: 0rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .padding-left {
-    padding-top: 0rem;
-    padding-right: 0rem;
-    padding-bottom: 0rem;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
 }
 
 .padding-vertical {
-    padding-right: 0rem;
-    padding-left: 0rem;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .padding-horizontal {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .margin-right {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    margin-left: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .margin-top {
-    margin-right: 0rem;
-    margin-bottom: 0rem;
-    margin-left: 0rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .margin-left {
-    margin-top: 0rem;
-    margin-right: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 .padding-right {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    padding-left: 0rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .padding-bottom {
-    padding-top: 0rem;
-    padding-right: 0rem;
-    padding-left: 0rem;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.spacer-huge {
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.spacer-medium {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.fs-styleguide_spacer-box {
+    width: 100%;
+    background-color: rgba(45, 64, 234, .1);
+    border: 1px dashed #2d40ea;
+    position: relative;
+}
+
+.spacer-xsmall {
+    width: 100%;
+    padding-top: .5rem;
+}
+
+.spacer-small {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.spacer-xhuge {
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.spacer-tiny {
+    width: 100%;
+    padding-top: .125rem;
+}
+
+.spacer-xxsmall {
+    width: 100%;
+    padding-top: .25rem;
+}
+
+.spacer-xxhuge {
+    width: 100%;
+    padding-top: 12rem;
+}
+
+.spacer-xlarge {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.spacer-large {
+    padding-top: 3rem;
+}
+
+.spacer-xxlarge {
+    width: 100%;
+    padding-top: 5rem;
 }
 
 /* *******************************
@@ -983,7 +1043,7 @@ Form Styles
 .form_radio {
     display: flex;
     margin-bottom: 0.5rem;
-    padding-left: 0rem;
+    padding-left: 0;
     flex-direction: row;
     align-items: center;
 }
@@ -991,7 +1051,7 @@ Form Styles
 .form_checkbox-icon.w--redirected-checked {
     width: 0.875rem;
     height: 0.875rem;
-    margin: 0rem 0.5rem 0rem 0rem;
+    margin: 0 0.5rem 0 0;
     border-radius: 0.125rem;
     background-size: 90%;
 }
@@ -999,15 +1059,15 @@ Form Styles
 .form_checkbox-icon.w--redirected-focus {
     width: 0.875rem;
     height: 0.875rem;
-    margin: 0rem 0.5rem 0rem 0rem;
+    margin: 0 0.5rem 0 0;
     border-radius: 0.125rem;
-    box-shadow: 0 0 0.25rem 0rem #3898ec;
+    box-shadow: 0 0 0.25rem 0 #3898ec;
 }
 
 .form_checkbox {
     display: flex;
     margin-bottom: 0.5rem;
-    padding-left: 0rem;
+    padding-left: 0;
     flex-direction: row;
     align-items: center;
 }
@@ -1015,16 +1075,16 @@ Form Styles
 .form_checkbox-icon {
     width: 0.875rem;
     height: 0.875rem;
-    margin: 0rem 0.5rem 0rem 0rem;
+    margin: 0 0.5rem 0 0;
     border-radius: 0.125rem;
 }
 
 .form_radio-icon {
     width: 0.875rem;
     height: 0.875rem;
-    margin-top: 0rem;
+    margin-top: 0;
     margin-right: 0.5rem;
-    margin-left: 0rem;
+    margin-left: 0;
 }
 
 .form_radio-icon.w--redirected-checked {
@@ -1036,7 +1096,7 @@ Form Styles
 .form_radio-icon.w--redirected-focus {
     width: 0.875rem;
     height: 0.875rem;
-    box-shadow: 0 0 0.25rem 0rem #3898ec;
+    box-shadow: 0 0 0.25rem 0 #3898ec;
 }
 
 .form_input {
@@ -1057,7 +1117,7 @@ Form Styles
 }
 
 .form_component {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 /* *******************************
@@ -1184,8 +1244,8 @@ Useful system classes
 }
 
 .spacing-clean {
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
 }
 
 .hide {
@@ -1250,84 +1310,139 @@ screen and (max-width: 479px) {
 }
 
 .margin-0 {
-    margin: 0rem !important;
+    margin: 0 !important;
 }
 
 .padding-0 {
-    padding: 0rem !important;
+    padding: 0 !important;
 }
 
 .spacing-clean {
-    padding: 0rem !important;
-    margin: 0rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .margin-top {
-    margin-right: 0rem !important;
-    margin-bottom: 0rem !important;
-    margin-left: 0rem !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
 }
 
 .padding-top {
-    padding-right: 0rem !important;
-    padding-bottom: 0rem !important;
-    padding-left: 0rem !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
 }
 
 .margin-right {
-    margin-top: 0rem !important;
-    margin-bottom: 0rem !important;
-    margin-left: 0rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
 }
 
 .padding-right {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
-    padding-left: 0rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
 }
 
 .margin-bottom {
-    margin-top: 0rem !important;
-    margin-right: 0rem !important;
-    margin-left: 0rem !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 .padding-bottom {
-    padding-top: 0rem !important;
-    padding-right: 0rem !important;
-    padding-left: 0rem !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 .margin-left {
-    margin-top: 0rem !important;
-    margin-right: 0rem !important;
-    margin-bottom: 0rem !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .padding-left {
-    padding-top: 0rem !important;
-    padding-right: 0rem !important;
-    padding-bottom: 0rem !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .margin-horizontal {
-    margin-top: 0rem !important;
-    margin-bottom: 0rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .padding-horizontal {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .margin-vertical {
-    margin-right: 0rem !important;
-    margin-left: 0rem !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 .padding-vertical {
-    padding-right: 0rem !important;
-    padding-left: 0rem !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.spacer-xxtiny {
+    width: 100%;
+    padding-top: 0.125rem;
+}
+
+.spacer-xsmall {
+    width: 100%;
+    padding-top: 0.25rem;
+}
+
+.spacer-tiny {
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+.spacer-small {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.spacer-medium {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.spacer-large {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.spacer-xlarge {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.spacer-xxlarge {
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.spacer-huge {
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.spacer-xhuge {
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.spacer-xxhuge {
+    width: 100%;
+    padding-top: 12rem;
 }
 
 /* *******************************
@@ -1728,71 +1843,71 @@ Media Queries
     }
 
     .margin-horizontal {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .padding-top {
-        padding-right: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
     }
 
     .margin-vertical {
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .margin-bottom {
-        margin-top: 0rem;
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .padding-left {
-        padding-top: 0rem;
-        padding-right: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
     .padding-vertical {
-        padding-right: 0rem;
-        padding-left: 0rem;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .padding-horizontal {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .margin-right {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-        margin-left: 0rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .margin-top {
-        margin-right: 0rem;
-        margin-bottom: 0rem;
-        margin-left: 0rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .margin-left {
-        margin-top: 0rem;
-        margin-right: 0rem;
-        margin-bottom: 0rem;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     .padding-right {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
     }
 
     .padding-bottom {
-        padding-top: 0rem;
-        padding-right: 0rem;
-        padding-left: 0rem;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .hide-tablet {
@@ -1917,71 +2032,71 @@ Media Queries
     }
 
     .margin-horizontal {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .padding-top {
-        padding-right: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
     }
 
     .margin-vertical {
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .margin-bottom {
-        margin-top: 0rem;
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .padding-left {
-        padding-top: 0rem;
-        padding-right: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
     .padding-vertical {
-        padding-right: 0rem;
-        padding-left: 0rem;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .padding-horizontal {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .margin-right {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-        margin-left: 0rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .margin-top {
-        margin-right: 0rem;
-        margin-bottom: 0rem;
-        margin-left: 0rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .margin-left {
-        margin-top: 0rem;
-        margin-right: 0rem;
-        margin-bottom: 0rem;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     .padding-right {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
     }
 
     .padding-bottom {
-        padding-top: 0rem;
-        padding-right: 0rem;
-        padding-left: 0rem;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .hide-mobile-landscape {
@@ -2062,81 +2177,81 @@ Media Queries
     }
 
     .home-message_component {
-        padding: 0rem;
+        padding: 0;
     }
 
     .home-message_content {
-        border-radius: 0rem;
+        border-radius: 0;
     }
 }
 
 @media screen and (max-width: 479px) {
     .margin-horizontal {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .padding-top {
-        padding-right: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
     }
 
     .margin-vertical {
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .margin-bottom {
-        margin-top: 0rem;
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .padding-left {
-        padding-top: 0rem;
-        padding-right: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
     .padding-vertical {
-        padding-right: 0rem;
-        padding-left: 0rem;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .padding-horizontal {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .margin-right {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-        margin-left: 0rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .margin-top {
-        margin-right: 0rem;
-        margin-bottom: 0rem;
-        margin-left: 0rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .margin-left {
-        margin-top: 0rem;
-        margin-right: 0rem;
-        margin-bottom: 0rem;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     .padding-right {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
     }
 
     .padding-bottom {
-        padding-top: 0rem;
-        padding-right: 0rem;
-        padding-left: 0rem;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .max-width-full-mobile-portrait {

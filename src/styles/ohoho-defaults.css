@@ -78,7 +78,7 @@ Hide page content by default
 .is-loading header,
 .is-loading .barba-container,
 .is-loading .fill-background {
-    display: none;
+    /* display: none */
 }
 
 /* *******************************
@@ -346,7 +346,6 @@ OHOHO Hover
     height: 100%;
     position: relative;
     column-gap: 3rem;
-    grid-area: 1 / 1 / 2 / 3;
 }
 
 @media (max-width: 479px) {
@@ -354,6 +353,10 @@ OHOHO Hover
         grid-template-columns: repeat(4, 1fr);
         column-gap: 1rem;
     }
+}
+
+.is-gapless {
+    column-gap: 0;
 }
 
 /* *******************************
@@ -914,6 +917,7 @@ Cuberto mouse
 }
 
 @supports (object-fit: cover) {
+
     .mf-cursor-media img,
     .mf-cursor-media video {
         position: static;

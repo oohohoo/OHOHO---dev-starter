@@ -7,12 +7,13 @@
         <!--  Finsweet Cookie Consent  -->
         <script async="" src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in"></script>
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <link href="http://localhost:3000/index.css" rel="stylesheet" type="text/css"/>
-        <!--    <link rel="stylesheet" href="../src/styles/fonts.css">
+        <!--  <link href="http://localhost:3000/index.css" rel="stylesheet" type="text/css"/> -->
+        <link rel="stylesheet" href="../src/styles/fonts.css">
         <link rel="stylesheet" href="../src/styles/normalize.css">
         <link rel="stylesheet" href="../src/styles/ohoho-framework.css">
         <link rel="stylesheet" href="../src/styles/ohoho-defaults.css">
-        <link rel="stylesheet" href="../src/styles/style.css"> -->
+        <!--  <link rel="stylesheet" href="../src/styles/overlayscrollbars.min.css"> -->
+        <link rel="stylesheet" href="../src/styles/style.css">
     </head>
     <body class="is-loading" data-barba="wrapper">
         <header data-pg-name="HEADER" cms-template-part="parts/main-nav" onclick cms-template-part-define class="background-color-white" data-pg-collapsed>
@@ -24,7 +25,7 @@
                     <div data-pg-name="CTA BUTTON" class="header-cta-wrap">
                         <button class="button">Click me!</button>
                     </div>
-                    <nav class="main-navigation" data-pg-name="NAV" data-pg-collapsed>
+                    <nav class="main-navigation" data-pg-name="NAV">
                         <ul class="menu">
                             <li class="menu-item" data-pg-collapsed>
                                 <a href="index.html">Home</a>
@@ -44,22 +45,269 @@
             </div>
         </header>
         <div data-barba-namespace="home" data-barba="container" class="barba-container" data-pg-name="BARBA CONTAINER">
-            <div id="headerx" data-pg-name="SCROLL TO"></div>
-            <main id="main" data-scroll-container="x" data-pg-name="MAIN">
-                <section data-pg-name="SECTION 1" data-scroll-section="a">
-                    <div class="padding-global" data-pg-name="PADDING GLOBAL">
-                        <div class="grid-main" data-pg-name="MASTER GRID">
-                            <div class="image-place-delete">
-                                <img class="fullimg" src="images/image.svg">
+            <div id="scrolltotop" data-pg-name="SCROLL TO"></div>
+            <main id="main" data-scroll-container="x" data-pg-name="MAIN" class="main-wrapper">
+                <section class="hide section_ohoho-core-structure" data-pg-collapsed>
+                    <div class="padding-global">
+                        <div class="container-large">
+                            <div class="padding-section-large">
+                                <div class="vh100">
+                                    <h1>Heading 1</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section data-pg-name="SECTION 1" data-scroll-section="a">
+                <section data-pg-name="FULLSCREEN MENU" class="fullscreen-menu hide">
+                    <div class="padding-global">
+                        <div class="fullscreen-menu-component" data-pg-name="FSM COMPONENT">
+                            <div class="grid-main is-gapless" data-pg-name="GRID">
+                                <div id="openmenu" data-pg-name="OPEN MENU BUTTON">
+                                    <div id="menuhover" class="menu_wrapper">
+                                        <div class="hambyline1"></div>
+                                        <div class="hambyline2"></div>
+                                        <div class="hambyline3"></div>
+                                        <div class="hambyline4"></div>
+                                    </div>
+                                </div>
+                                <div id="closemenu" data-pg-collapsed data-pg-name="CLOSE MENU BUTTON">
+                                    <img src="images/close.svg" alt="">
+                                </div>
+                                <div class="fs-menu_wrapper" data-pg-name="MENU WRAPPER" data-pg-collapsed>
+                                    <div class="fs-menu_container" data-pg-name="MENU CONTAINER">
+                                        <ul class="fs-menu_main-list" data-pg-name="MAIN MENU">
+                                            <li class="fs-main-nav_wrapper">
+                                                <div class="fs-main_item-wrapper">
+                                                    <a href="index.html" class="fs-main-item">Home</a>
+                                                    <div class="underline"></div>
+                                                </div>
+                                                <h1 class="superscript">145</h1>
+                                            </li>
+                                            <li class="fs-main-nav_wrapper" data-pg-collapsed>
+                                                <div class="fs-main_item-wrapper">
+                                                    <a href="index.html" class="fs-main-item">Utility</a>
+                                                    <div class="underline"></div>
+                                                </div>
+                                                <h1 class="superscript">34</h1>
+                                            </li>
+                                            <li class="fs-main-nav_wrapper" data-pg-collapsed>
+                                                <div class="fs-main_item-wrapper">
+                                                    <a href="index.html" class="fs-main-item">Decorative</a>
+                                                    <div class="underline"></div>
+                                                </div>
+                                                <h1 class="superscript">34</h1>
+                                            </li>
+                                            <li class="fs-main-nav_wrapper" data-pg-collapsed>
+                                                <div class="fs-main_item-wrapper">
+                                                    <a href="index.html" class="fs-main-item">Earrings</a>
+                                                    <div class="underline"></div>
+                                                </div>
+                                                <h1 class="superscript">145</h1>
+                                            </li>
+                                            <li class="fs-main-nav_wrapper" data-pg-collapsed>
+                                                <div class="fs-main_item-wrapper">
+                                                    <a href="index.html" class="fs-main-item">Necklaces</a>
+                                                    <div class="underline"></div>
+                                                </div>
+                                                <h1 class="superscript">54</h1>
+                                            </li>
+                                            <li class="fs-main-nav_wrapper" data-pg-collapsed>
+                                                <div class="fs-main_item-wrapper">
+                                                    <a href="index.html" class="fs-main-item">Rings</a>
+                                                    <div class="underline"></div>
+                                                </div>
+                                                <h1 class="superscript">1325</h1>
+                                            </li>
+                                        </ul>
+                                        <div class="spacer-xlarge"></div>
+                                        <ul class="fs-menu_sub_nav menu" data-pg-name="SUB MENU">
+                                            <li class="fs-sub-nav_wrapper" data-pg-collapsed><a href="index.html" class="fs-sub-item hovercolor">About</a>
+                                            </li>
+                                            <li class="fs-sub-nav_wrapper" data-pg-collapsed><a href="index.html" class="fs-sub-item hovercolor">Lookbook</a>
+                                            </li>
+                                            <li class="fs-sub-nav_wrapper" data-pg-collapsed><a href="index.html" class="fs-sub-item hovercolor">Find a store</a>
+                                            </li>
+                                            <li class="fs-sub-nav_wrapper" data-pg-collapsed><a href="index.html" class="fs-sub-item hovercolor">Contact</a>
+                                            </li>
+                                            <li class="fs-sub-nav_wrapper" data-pg-collapsed><a href="index.html" class="fs-sub-item hovercolor">Facebook</a>
+                                            </li>
+                                            <li class="fs-sub-nav_wrapper" data-pg-collapsed><a href="index.html" class="fs-sub-item hovercolor">Instagram</a>
+                                            </li>
+                                        </ul>
+                                        <div class="spacer-xlarge"></div>
+                                        <div class="fs-menu_language_nav" data-pg-name="LANGUAGE MENU" data-pg-collapsed>
+                                            <div class="lang-wrap margin-medium margin-right">
+                                                <div class="hovercolor">FR</div>
+                                            </div>
+                                            <div class="lang-wrap">
+                                                <div class="hovercolor">EN</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="kosara" data-pg-collapsed data-pg-name="SHOPPING BAG ICON">
+                                    <img src="images/image.svg" alt="" class="fullimg image-3">
+                                </div>
+                                <div class="tickerwrapper" data-pg-collapsed data-pg-name="MARQUEE">
+                                    <ul role="list" class="list" data-pg-collapsed>
+                                        <li class="listitem">
+                                            <div class="text-block">Lookbook — S019 Lookbook — S019</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="background relative" data-pg-collapsed>
+                                    <h1 class="heading-2 hide">PRODUCT<br>DESIGN</h1>
+                                    <div class="background-inner" data-pg-collapsed>
+                                        <img sizes="(max-width: 479px) 100vw, (max-width: 767px) 107px, (max-width: 991px) 33vw, 93vw" alt="" class="bgimage" src="images/menu-p-1600.jpeg">
+                                    </div>
+                                </div>
+                                <div class="collage" data-pg-collapsed>
+                                    <div class="collage-wrapper">
+                                        <div class="text-block-3">Collage</div>
+                                        <div class="div-block-5"></div>
+                                    </div>
+                                </div>
+                                <div class="wback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="swup" class="animation-class hide" data-pg-name="BACKUP" data-pg-hidden data-pg-collapsed>
+                    <div class="w-layout-grid grid100 _100vh" data-pg-collapsed>
+                        <div id="openmenu" class="open">
+                            <div id="menuhover" class="menu_wrapper">
+                                <div class="hambyline1"></div>
+                                <div class="hambyline2"></div>
+                                <div class="hambyline3"></div>
+                                <div class="hambyline4"></div>
+                            </div>
+                        </div>
+                        <div id="closemenu" class="close w-node-_6d97b333-48b5-eda6-e991-70b44e1549bc-53022fb4">
+                            <img src="images/close.svg" alt="">
+                        </div>
+                        <div id="w-node-_6d97b333-48b5-eda6-e991-70b44e1549be-53022fb4" class="left-white">
+                            <div class="left-main-links-wrapper">
+                                <div class="link-wrapper">
+                                    <div id="menuitemhover" class="line-wrapper">
+                                        <h1 class="main-link">All</h1>
+                                        <div class="underline"></div>
+                                    </div>
+                                    <h1 class="superscript">145</h1>
+                                </div>
+                                <div class="link-wrapper">
+                                    <div class="line-wrapper">
+                                        <h1 id="mainlink" class="main-link">Utility</h1>
+                                        <div class="underline"></div>
+                                    </div>
+                                    <h1 id="superscript" class="superscript">14</h1>
+                                </div>
+                                <div class="link-wrapper">
+                                    <div class="line-wrapper">
+                                        <h1 class="main-link">Decorative</h1>
+                                        <div class="underline"></div>
+                                    </div>
+                                    <h1 class="superscript">216</h1>
+                                </div>
+                                <div class="link-wrapper">
+                                    <div class="line-wrapper">
+                                        <h1 class="main-link">Earrings</h1>
+                                        <div class="underline"></div>
+                                    </div>
+                                    <h1 class="superscript">28</h1>
+                                </div>
+                                <div class="link-wrapper">
+                                    <div class="line-wrapper">
+                                        <h1 class="main-link">Necklaces</h1>
+                                        <div class="underline"></div>
+                                    </div>
+                                    <h1 class="superscript">513</h1>
+                                </div>
+                                <div class="link-wrapper">
+                                    <div class="line-wrapper">
+                                        <h1 class="main-link">Rings</h1>
+                                        <div class="underline"></div>
+                                    </div>
+                                    <h1 class="superscript">1345</h1>
+                                </div>
+                            </div>
+                            <div class="left-small-links-wrapper"><a href="#" class="small-link-wrapper w-inline-block"> <h1 id="smallmenuitem" class="small-link hovercolor">About</h1> </a>
+                                <div class="small-link-wrapper">
+                                    <h1 id="smallmenuitem" class="small-link hovercolor">Lookbook</h1>
+                                </div>
+                                <div class="small-link-wrapper">
+                                    <h1 id="smallmenuitem" class="small-link hovercolor">Find a store</h1>
+                                </div>
+                                <div class="small-link-wrapper">
+                                    <h1 id="smallmenuitem" class="small-link hovercolor">Contact</h1>
+                                </div>
+                                <div class="small-link-wrapper">
+                                    <h1 id="smallmenuitem" class="small-link hovercolor">Facebook</h1>
+                                </div>
+                                <div class="small-link-wrapper">
+                                    <h1 id="smallmenuitem" class="small-link hovercolor">Instagram</h1>
+                                </div>
+                            </div>
+                            <div class="left-language">
+                                <div class="lang-wrap">
+                                    <h1 class="language hovercolor">FR</h1>
+                                </div>
+                                <div class="lang-wrap">
+                                    <h1 class="language hovercolor">EN</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="w-node-_6d97b333-48b5-eda6-e991-70b44e154a04-53022fb4" class="tickerwrapper">
+                            <ul role="list" class="list">
+                                <li class="listitem">
+                                    <div class="text-block">Lookbook — S019 Lookbook — S019</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="w-node-_6d97b333-48b5-eda6-e991-70b44e154a09-53022fb4" class="background">
+                            <div class="background-inner" data-pg-collapsed>
+                                <img sizes="(max-width: 479px) 100vw, (max-width: 767px) 107px, (max-width: 991px) 33vw, 93vw" alt="" class="bgimage" src="https://images.unsplash.com/photo-1689950106899-a684ff88224c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5NTY0NzkzMHw&ixlib=rb-4.0.3&q=80&w=1080">
+                            </div>
+                        </div>
+                        <div id="w-node-_6d97b333-48b5-eda6-e991-70b44e154a0c-53022fb4" class="collage">
+                            <div class="collage-wrapper">
+                                <div class="text-block-3">Collage</div>
+                                <div class="div-block-5"></div>
+                            </div>
+                        </div>
+                        <div id="w-node-_6d97b333-48b5-eda6-e991-70b44e154a11-53022fb4" class="kosara">
+                            <img src="images/image.svg" alt="" class="image-3">
+                        </div>
+                        <div class="wback"></div>
+                    </div>
+                    <h1 class="heading-2" data-pg-collapsed>PRODUCT<br>DESIGN</h1>
+                </div>
+                <section data-pg-name="SECTION 1" data-scroll-section="a" data-pg-collapsed class="hide">
                     <div class="padding-global" data-pg-name="PADDING GLOBAL">
                         <div class="grid-main" data-pg-name="MASTER GRID">
                             <div class="image-place-delete">
-                                <img src="https://images.unsplash.com/photo-1681207751526-a091f2c6a538?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5NTU2ODc2MXw&ixlib=rb-4.0.3&q=80&w=1080" class="fullimg">
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <img class="fullimg" src="images/image.svg">Slide 1
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="fullimg" src="images/image.svg">Slide 2
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="fullimg" src="images/image.svg">Slide 3
+                                        </div>
+                                        ...
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -92,7 +340,7 @@
                 </div>
             </footer>
         </div>
-        <div fs-cc="banner" class="fs-cc-banner2_component hide" data-pg-name="COOKIE" cms-template-part="parts/cookies" cms-template-part-define data-pg-collapsed data-pg-hidden>
+        <div fs-cc="banner" class="fs-cc-banner2_component" data-pg-name="COOKIE" cms-template-part="parts/cookies" cms-template-part-define data-pg-collapsed>
             <div class="fs-cc-banner2_container">
                 <div class="fs-cc-banner2_text">We use cookies so that you can see the website and to improve your user
                     experience. View our&nbsp;<a class="fs-cc-banner2_text-link" cms-site-link="page" cms-site-link-post="privacy-policy">Privacy Policy</a> for more information.
@@ -102,7 +350,7 @@
                 </div>
             </div>
         </div>
-        <div fs-cc-scroll="disable" fs-cc="preferences" class="fs-cc-prefs2_component hide" data-pg-name="COOKIE" data-pg-collapsed cms-template-part="parts/cookiesdue" cms-template-part-define data-pg-hidden>
+        <div fs-cc-scroll="disable" fs-cc="preferences" class="fs-cc-prefs2_component" data-pg-name="COOKIE" data-pg-collapsed cms-template-part="parts/cookiesdue" cms-template-part-define>
             <div class="fs-cc-prefs2_form-wrapper w-form">
                 <form id="cookie-preferences" name="wf-form-Cookie-Preferences" data-name="Cookie Preferences" method="get" class="fs-cc-prefs2_form">
                     <div fs-cc="close" class="fs-cc-prefs2_close">
@@ -229,7 +477,7 @@
          [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
         <!--  <script src="js/bundle.js" data-pg-name="BUNDLE"></script>
         <script src="js/app.js" data-pg-name="APP"></script> -->
-        '
-        <script defer src="http://localhost:3000/index.js"></script>         '
+        <!--    <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script> -->
+        <script defer src="http://localhost:3000/index.js"></script>                 '
     </body>
 </html>
